@@ -100,6 +100,11 @@ ul {
 	color: rgba(255,255,255,0.9);
 }
 
+#menu-icon-before:hover:before {
+	content: "\2261";
+	color: rgba(255,255,255,0.7);
+}
+
 #menu-icon-after:before {
 	content: "\00D7";
 	color: rgba(24,24,24,0.9);
@@ -126,17 +131,20 @@ ul {
 
 #important li a,
 #main-footer span,
-#main-footer ul li a {
+#main-footer ul li a,
+.background-link {
 	color: rgba(255,255,255,0.9);
 }
 
 #important li a:visited,
-#main-footer ul li a:visited {
+#main-footer ul li a:visited,
+.background-link:visited {
 	color: rgba(255,255,255,0.9);
 }
 
 #important li a:hover,
-#main-footer ul li a:hover {
+#main-footer ul li a:hover,
+.background-link:hover {
 	color: rgba(255,255,255,0.7);
 }
 
@@ -226,17 +234,12 @@ ul {
 	width: auto;
 }
 
-#homepage-video-headline-container {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	background-color: transparent;
-	width: 100vw;
-	font-family: 'Lato', sans-serif;
-}
-
 #homepage-video-headline {
-	float: right;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	font-family: 'Lato', sans-serif;
+	z-index: 10;
 }
 
 #homepage-video-headline h1 {	
@@ -279,10 +282,6 @@ ul {
 #main-footer ul li a {
 	margin: 0.5rem 0;
 	font-size: 1.5rem;
-}
-
-#copyright-mobile {
-
 }
 
 	/*----------------------------------------

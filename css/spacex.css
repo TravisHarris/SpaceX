@@ -114,7 +114,7 @@ ul {
 #important-secondary,
 #additional,
 #main-footer,
-#copyright-mobile {
+.copyright-mobile {
 	font-family: "Lato", sans-serif;
 }
 
@@ -205,7 +205,7 @@ ul {
 	border: none;
 }
 
-#copyright-mobile,
+.copyright-mobile,
 #mobile-social li a,
 #mobile-social li a:visited,
 #mobile-social li a:hover {
@@ -213,11 +213,6 @@ ul {
 	color: #222;
 	padding: 0 1rem;
 	font-size: 2rem;
-}
-
-#copyright-mobile {
-	font-size: 1rem;
-	padding: 1rem 0;
 }
 
 #background-video {
@@ -273,7 +268,8 @@ ul {
 	margin: 0 0.5rem 0;
 }
 
-#main-footer span {
+#main-footer ul li span,
+#main-footer ul li span a {
 	display: inline-block;
 	font-size: 0.8rem;
 	margin: 0.5rem 0;
@@ -301,6 +297,17 @@ ul {
 
 .la {
 	font-family: FontAwesome;
+}
+
+.copyright-mobile {
+	font-size: 1rem;
+	padding: 1rem 0;
+}
+
+.copyright-mobile a,
+.copyright-mobile a:visited,
+.copyright-mobile a:hover {
+	color: #222;
 }
 
 	/*----------------------------------------
@@ -346,7 +353,7 @@ ul {
 	}
 
 	#mobile-social,
-	#copyright-mobile {
+	.copyright-mobile {
 		display: none;
 	}
 
